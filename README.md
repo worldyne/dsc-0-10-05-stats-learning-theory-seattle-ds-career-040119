@@ -31,19 +31,19 @@ In the context of Statistical learning, there are two types of data:
 
 ![](vars.jpg)
 
-Note: There is a third type of variable called a **controlled** variable used for control/clinical testing. We shall visit that later. 
+Note: There is a third type of variable called a **controlled** variable used for control/clinical trials. We shall visit that later. 
 
-Two examples of common independent variables are age and time. There’s nothing you or anything else can do to speed up or slow down time or increase or decrease age. They’re independent of everything else.
+Two examples of common independent variables are age and time. There is nothing you or anything else can do to speed up or slow down time or increase or decrease age. They are independent of everything else.
 
-An example of a dependent variable is how much you weigh at different ages. Here , the dependent variable (weight) depends on the independent variable (age).
+An example of a dependent variable is how much you weigh at different ages. Here, the dependent variable (weight) depends on the independent variable (age).
 
 > **The dependent variable is actually 'dependent' on the independent variable. As the experimenter changes the independent variable, the effect on the dependent variable is observed and recorded.**
 
 Independent and dependent variables are normally shown on a graph under a standardized approach. This makes it easy for you to quickly see which variable is independent and which is dependent when looking at a graph or chart. 
 
-COnventionally, the independent variable goes on the x-axis, or the horizontal axis. For the height-weight data that we saw in earlier labs, a scatter plot may look as shown below. Here we have set height as independant and weight as a dependent variable i.d. **we want to study if height has some effect on weight**:
+Conventionally, the independent variable goes on the x-axis, or the horizontal axis. For the height-weight data that we saw in earlier labs, a scatter plot may look as shown below. Here we have set height as independent and weight as a dependent variable i.e. **we want to study if height has some effect on weight**:
 
-<img  src ="https://onlinecourses.science.psu.edu/stat500/sites/onlinecourses.science.psu.edu.stat500/files/lesson12/scatterplot_mtb_01/index.png" width=500>
+<img  src ="hw.png" width=500>
 
 ## Statistical Model 
 
@@ -75,7 +75,7 @@ In some cases you may put to change the orientation of data and try to predict h
 
 ## Statistical Model Parameters
 
->> **Model Parameters are the co-efficients of the model equation for estimating the output**. 
+> **Model Parameters are the co-efficients of the model equation for estimating the output**. 
 
 Statistical Learning is all about learning these parameters. A statistical learning approach would help us **learn** these parameters so we have a clear description of their relationship which we can replicate and analyze under different circumstances. 
 
@@ -97,7 +97,7 @@ This is how we would understand the model:
 
 - Education and experience (Independent variables) are also called as **features** of the model.
 
-- Income (dependant) is uncontrollable variable also known as a **target**.
+- Income (dependent) is uncontrollable variable also known as a **target**.
 
 ## Model Generalization
 
@@ -105,23 +105,23 @@ As the data which is available to us for modeling is finite Data is finite, the 
 
 Training the model is like infancy stage for humans. Examples are presented to the model and the model tweaks its  parameters to better understand the data. Once the training is over, the model is unleashed upon new data and then uses what it has learned to explain that data.  This is where problems can emerge. If we **over-train** the model on the training data i.e. make the model every detail of shown data, it will be able to identify all the relevant information in the training data, but will fail miserably when presented with the new data. 
 
-We then say that the **model is incapable of generalizing**, or that **model is overfitting the training data**. 
+We then say that the **model is incapable of generalizing**, or that **model is over-fitting the training data**. 
 
 
-Here's a great example of the phenomenon: modelling happiness as a function of wealth. 
+Here's a great example of the phenomenon: modeling happiness as a function of wealth. 
 
 
 ![](happy.png)
 
 The top three diagrams we have data and models (dashed curves). From left to right the models have been trained longer and longer on the training data. The training error curve in the bottom box shows that the training error gets better and better as we train longer (increasing model complexity). You may think that if we train longer we'll get better! Well, yes, but **only better at describing the training data**. The top right box shows a very complex model that hits all the data points. This model does great on the training data, but when presented with new data (examine the Prediction error curve in the bottom box) then it does abysmally. 
 
-In order to create good predictive models in machine learning that are capable of generalizing, one needs to know when to stop training the model so that it doesn't overfit.
+In order to create good predictive models in machine learning that are capable of generalizing, one needs to know when to stop training the model so that it doesn't over-fit.
 
 
 
 ### Model Validation
 
->**Model validation is a process of controlling overfitting and allow a higher degree of generalizability.**
+>**Model validation is a process of controlling over-fitting and allow a higher degree of generalizability.**
 
 Here is how we perform validation, in its simplest form:
 
@@ -155,6 +155,12 @@ Below is an example loss function known as **Sum of Squares** loss. This calcula
 
 We shall go into details of this particular loss function in upcoming lessons. 
 In fact, we can design our own (very) basic loss function to further explain how it works. 
+
+## Additional Resources
+
+- [Youtube: Introduction to Statistical Learning Theory](https://www.youtube.com/watch?v=rqJ8SrnmWu0)
+
+- [An Overview of Statistical Learning Theory with examples](https://www.princeton.edu/~harman/Papers/SLT-tutorial.pdf) 
 
 ## Summary 
 
